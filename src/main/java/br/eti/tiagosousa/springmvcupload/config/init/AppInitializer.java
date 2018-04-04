@@ -1,5 +1,8 @@
 package br.eti.tiagosousa.springmvcupload.config.init;
 
+import javax.servlet.MultipartConfigElement;
+import javax.servlet.ServletRegistration.Dynamic;
+
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 import br.eti.tiagosousa.springmvcupload.config.WebConfig;
@@ -19,5 +22,10 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
 	@Override
 	protected String[] getServletMappings() {
 		return new String[] { "/" };
+	}
+	
+	@Override
+	protected void customizeRegistration(Dynamic registration) {
+		registration.setMultipartConfig(new MultipartConfigElement(""));
 	}
 }

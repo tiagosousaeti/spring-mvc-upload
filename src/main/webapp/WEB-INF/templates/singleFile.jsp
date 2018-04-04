@@ -5,24 +5,20 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link href="<c:url value="/resources/static/css/bootstrap.min.css" />" rel="stylesheet"></link>
-		<title>Home - Spring MVC Upload</title>
+		<title>Upload de Arquivo Único - Spring MVC Upload</title>
 	</head>
 	<body>
 		<div class="container">
 			<h1>Spring MVC Upload</h1>
-			<h6>Projeto Java 8 com Spring MVC</h6>
+			<h4>Upload de arquivo único</h4>
 			<hr />
-			<h6>Exemplos:</h6>
-			<ul class="list-unstyled">
-				<li><a href="/springmvcupload/singlefile">Upload de arquivo único</a></li>
-			</ul>
-			<h6>Dependências:</h6>
-			<ul class="list-unstyled">
-				<li>Java 8</li>
-				<li>Maven Compiler 3.2</li>
-				<li>Servlet API 3.1.0</li>
-				<li>Spring CORE 5.0.2</li>
-			</ul>
+			<form method="post" enctype="multipart/form-data" action="singlefile">
+				<input type="file" name="arquivo" />
+				<br /><br />
+				<input type="submit" value="Enviar" />
+			</form>
+			<hr />
+			<a href="/springmvcupload/">Voltar a página inicial</a>
 		</div>
 		<script src="<c:url value="/resources/static/js/jquery-3.2.1.slim.min.js" />" type="text/javascript"></script>
 		<script src="<c:url value="/resources/static/js/popper.min.js" />" type="text/javascript"></script>
