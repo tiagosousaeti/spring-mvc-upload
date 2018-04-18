@@ -5,12 +5,12 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link href="<c:url value="/resources/static/css/bootstrap.min.css" />" rel="stylesheet"></link>
-		<title>Upload de Arquivo Único - Spring MVC Upload</title>
+		<title>Arquivo Único - Spring MVC Upload</title>
 	</head>
 	<body>
 		<div class="container">
 			<h1>Spring MVC Upload</h1>
-			<h4>Upload de arquivo único</h4>
+			<h4>Arquivo único</h4>
 			<hr />
 			<form method="post" enctype="multipart/form-data" action="singlefile">
 				<input type="file" name="arquivo" />
