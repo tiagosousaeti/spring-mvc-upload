@@ -1,6 +1,10 @@
+![](https://tiagosousa.eti.br/img/Logo.png "Tiago Sousa")
+
+![Twitter Follow](https://img.shields.io/twitter/follow/tiaguins.svg?style=social)](https://twitter.com/tiaguins) 
+
 # Spring MVC Upload
 
-Template Upload com JSP
+Diversos exemplos de upload de arquivo.
 
 ## Dependências
 - Java 8
@@ -13,7 +17,4 @@ Template Upload com JSP
 - Bootstrap 4
 
 ### Versão
-1.0.2
-
-## Redes Sociais
-[![Twitter Follow](https://img.shields.io/twitter/follow/tiaguins.svg?style=social)](https://twitter.com/tiaguins) 
+1.0.3

@@ -21,8 +21,7 @@ public class MultipleFilesController {
 	
 	@PostMapping("/multiplefiles")
     public @ResponseBody String multipleSave(@RequestParam("arquivos") MultipartFile[] arquivos){
-		System.out.println(arquivos.length);
-    	String fileName = null;
+		String fileName = null;
     	String msg = "";
     	if (arquivos != null && arquivos.length > 0) {
     		for(Integer i = 0; i < arquivos.length; i++){
@@ -32,13 +31,13 @@ public class MultipleFilesController {
 	                BufferedOutputStream buffStream = new BufferedOutputStream(new FileOutputStream(fileName));
 	                buffStream.write(bytes);
 	                buffStream.close();
-	                msg += "You have successfully uploaded " + fileName +"<br/>";
+	                msg += "Arquivo recebido com sucesso: " + fileName +"<br/>";
 	            } catch (Exception e) {
-	                return "Erro ao fazer upload do arquivo: " + fileName + "<br/> Mensagem do Erro: " + e.getMessage();
+	                return "Erro ao fazer upload do arquivo.<br/> Selecione 4 arquivos e clique em enviar.<br/><br/><a href='/springmvcupload/multiplefiles'>Voltar</a>";
 	            }
     		}
-    		return msg;
+    		return msg += "<br/><a href='/springmvcupload/multiplefiles'>Voltar</a>";
         }
-    	return "Upload interrompido. Arquivo não selecionado.<br /><a href='/springmvcupload/multiplefiles'>Voltar</a>";
+    	return "Upload interrompido. Arquivo não selecionado.<br /><br/><a href='/springmvcupload/multiplefiles'>Voltar</a>";
     }
 }

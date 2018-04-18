@@ -30,12 +30,11 @@ public class SingleFileController {
                 BufferedOutputStream buffStream = new BufferedOutputStream(new FileOutputStream(new File(nomeDoArquivo)));
                 buffStream.write(bytes);
                 buffStream.close();
-                return "Arquivo enviado com sucesso. <br />Nome: " + nomeDoArquivo + "<br /><a href='/springmvcupload/singlefile'>Voltar</a>";
+                return "Arquivo enviado com sucesso. <br />Nome: " + nomeDoArquivo + "<br /><br /><a href='/springmvcupload/singlefile'>Voltar</a>";
             } catch (Exception e) {
-                return "Erro ao enviar o arquivo. <br />Nome: " + nomeDoArquivo + "<br /> Mensagem do erro: " + e.getMessage() + "<br /><a href='/springmvcupload/singlefile'>Voltar</a>";
+                return "Erro ao enviar o arquivo. <br />Nome: " + nomeDoArquivo + "<br /> Mensagem do erro: " + e.getMessage() + "<br /><br /><a href='/springmvcupload/singlefile'>Voltar</a>";
             }
-        } else {
-            return "Upload interrompido. Arquivo não selecionado.<br /><a href='/springmvcupload/singlefile'>Voltar</a>";
-        }
+        } 
+        return "Upload interrompido. Arquivo não selecionado.<br /><br /><a href='/springmvcupload/singlefile'>Voltar</a>";
     }
 }

@@ -16,7 +16,7 @@
 			<div class="col-6">
 				<form:form modelAttribute="album" action="savePhotoAlbum" method="post" enctype="multipart/form-data">
 					<div class="form-group">
-	                   <label for="name">Nome do álbum: </label>
+	                   <label for="nome">Nome do álbum: </label>
 	                   <form:input id="nome" path="nome" cssErrorClass="error" class="form-control" />
 	                   <form:errors path="nome" cssClass="error" />
 	                </div>

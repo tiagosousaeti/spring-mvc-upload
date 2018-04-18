@@ -12,13 +12,29 @@
 			<h1>Spring MVC Upload</h1>
 			<h4>Vários Arquivos</h4>
 			<hr />
-			<form method="post" enctype="multipart/form-data" action="multiplefiles">
-				Arquivo 1: <input type="file" name="arquivos"> <br/>
-				Arquivo 2: <input type="file" name="arquivos"> <br/>
-				Arquivo 3: <input type="file" name="arquivos"> <br/>
-				Arquivo 4: <input type="file" name="arquivos"> <br/>
-				<br /><br /><input type="submit" value="Enviar" /> 
-			</form>
+			<div class="col-6">
+				<form method="post" enctype="multipart/form-data" action="multiplefiles">
+					<div class="form-group">
+	                   <label>Arquivo 1</label>
+	                   <input type="file" name="arquivos" class="form-control" />
+	                </div>
+					<div class="form-group">
+	                   <label>Arquivo 2</label>
+	                   <input type="file" name="arquivos" class="form-control" />
+	                </div>
+					<div class="form-group">
+	                   <label>Arquivo 3</label>
+	                   <input type="file" name="arquivos" class="form-control" />
+					</div>
+					<div class="form-group">
+	                   <label>Arquivo 4</label>
+	                   <input type="file" name="arquivos" class="form-control" />
+	                </div>
+					<div class="form-group">
+	                    <input id="submit" type="submit" value="Enviar" class="btn btn-primary" />
+	                </div>
+				</form>
+			</div>
 			<hr />
 			<a href="/springmvcupload/">Voltar a página inicial</a>
 		</div>

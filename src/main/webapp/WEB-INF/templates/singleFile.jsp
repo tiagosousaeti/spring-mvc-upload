@@ -12,11 +12,16 @@
 			<h1>Spring MVC Upload</h1>
 			<h4>Arquivo único</h4>
 			<hr />
-			<form method="post" enctype="multipart/form-data" action="singlefile">
-				<input type="file" name="arquivo" />
-				<br /><br />
-				<input type="submit" value="Enviar" />
-			</form>
+			<div class="col-6">
+				<form method="post" enctype="multipart/form-data" action="singlefile">
+					<div class="form-group">
+						<input type="file" name="arquivo" class="form-control" />
+					</div>
+					<div class="form-group">
+	                    <input id="submit" type="submit" value="Enviar" class="btn btn-primary" />
+	                </div>
+				</form>
+			</div>
 			<hr />
 			<a href="/springmvcupload/">Voltar a página inicial</a>
 		</div>
